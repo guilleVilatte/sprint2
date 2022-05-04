@@ -38,15 +38,15 @@
     </nav>
     <div class="row mt-5 ms-sm-5">
             <div class="col-12 col-sm-5 offset-sm-1 mt-5">
-                <h1 class="col-8 offset-2 offset-sm-0 text-center text-sm-start fw-bold">A Simple Bookmark Manager</h1>
-                <p class="text-center text-sm-start text-muted mt-3 col-sm-9">A clean and simple interface to organize your favourite websites.Open a new browser tab and see your sites load instantly.Try it for free. </p>
+                <h1 class="col-10 offset-1 offset-sm-0 text-center text-sm-start fw-bold">A Simple Bookmark Manager</h1>
+                <p class="text-center text-sm-start text-muted mt-3 col-10 col-sm-9 offset-1 offset-sm-0">A clean and simple interface to organize your favourite websites.Open a new browser tab and see your sites load instantly.Try it for free. </p>
                 <div class="d-flex justify-content-center justify-content-sm-start mt-3">
                     <button type="button" class="btn btn-primary me-2 shadow-sm">Get it on Chrome</button>
                     <button type="button" class="btn btn-light shadow-sm">Get it on Firefox</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 order-first order-sm-last position-relative pe-0">
-              <div class="col-9 float-end bg-primary rounded-end rounded-pill mt-5" style="height: 45vh;"></div>
+              <div class="mancha col-9 float-end bg-primary rounded-end rounded-pill mt-5"></div>
               <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-hero.svg" class="img-fluid col-12 col-sm-9 position-absolute top-50 start-50 translate-middle" alt="">
             </div>
     </div>
@@ -56,7 +56,7 @@
             <p class="text-center col-sm-4 text-muted mx-auto mt-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
           </div>
           <div class="col-12">
-            <ul class="nav nav-tabs justify-content-center flex-column flex-sm-row mb-5" id="myTab" role="tablist">
+            <ul class="col-9 col-sm-12 mx-auto nav nav-tabs justify-content-center flex-column flex-sm-row mb-5" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="tab nav-link active pb-3 pt-3" data-bs-toggle="tab" data-bs-target="#primero" type="button" role="tab" aria-controls="primero" aria-selected="true">Simple Bookmarking</button>
               </li>
@@ -71,7 +71,7 @@
               <div class="tab-pane fade show active" id="primero" role="tabpanel" aria-labelledby="primero-tab">
                 <div class="row">
                   <div class="col-11 col-sm-6 position-relative">
-                      <div class="col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5" style="height: 40vh;"></div>
+                      <div class="mancha col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5"></div>
                       <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-features-tab-1.svg" class="img-fluid col-10 col-sm-7 position-absolute top-50 start-50 translate-middle" alt="">
                   </div>
                   <div class="col-12 col-sm-6 mt-5">
@@ -84,7 +84,7 @@
               <div class="tab-pane fade" id="segundo" role="tabpanel" aria-labelledby="segundo-tab">
                 <div class="row">
                   <div class="col-12 col-sm-6 position-relative">
-                    <div class="col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5" style="height: 45vh;"></div>
+                    <div class="mancha col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5"></div>
                     <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-features-tab-2.svg" class="img-fluid col-10 col-sm-7 position-absolute position-absolute top-50 start-50 translate-middle" alt="">
                   </div>
                   <div class="col-12 col-sm-6 mt-5">
@@ -97,7 +97,7 @@
               <div class="tab-pane fade" id="tercero" role="tabpanel" aria-labelledby="tercero-tab">
                 <div class="row">
                   <div class="col-12 col-sm-6 position-relative">
-                    <div class="col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5" style="height: 45vh;"></div>
+                    <div class="mancha col-10 col-sm-8 float-start bg-primary rounded-start rounded-pill mt-5"></div>
                     <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-features-tab-3.svg" class="img-fluid col-10 col-sm-6 position-absolute position-absolute top-50 start-50 translate-middle" alt="">
                   </div>
                   <div class="col-12 col-sm-6">
@@ -220,24 +220,34 @@
         <h2 class="text-center fw-bold text-white col-12 col-sm-4 mx-auto" id="pricing">Stay up-to-date with what we're doing</h2>
       </div>
       <div class="col-12 mt-4 mb-4 mx-auto d-flex justify-content-center">
-        <form class="col-10 col-sm-4 d-sm-flex">
-          <div class="mb-3 col-12 col-sm-9 me-sm-2">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email adress">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4 position-relative">
+            <label for="validationTooltipUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Please choose a unique and valid username.
+              </div>
+            </div>
           </div>
-          <div class="ms-sm-2 col-12 col-sm-3">
-            <button type="submit" class="btn btn-secondary align-middle col-12 col-sm-10">Contact us</button>
+          <div class="col-12">
+            <button class="btn btn-secondary" type="submit">Contact us</button>
           </div>
         </form>
       </div>
     </div>
-    <div class="row bg-success">
-        <div class="col-2 mt-3 mb-3 offset-1">
-          <img src="./Recursos projecte sprint 2-20220422/Imagenes/logo-bookmark.svg" alt="" width="150" height="24" class="d-inline-block align-text-top img-fluid ms-sm-5">
+    <div class="row footer bg-success pb-4 pb-sm-0">
+        <div class="col-12 col-sm-3 d-flex justify-content-center justify-content-sm-end align-items-center mt-5 mt-sm-0 mb-3 mb-sm-0">
+          <div><img src="./Recursos projecte sprint 2-20220422/Imagenes/bookmark.svg" alt="" width="150" height="24" class="d-inline-block align-text-top img-fluid"></div>
         </div>
-        <div class="col mt-2 mb-3 d-sm-flex">
-          <a class="header nav-link text-light" href="#features">Features</a>
-          <a class="header nav-link text-light" href="#pricing">Pricing</a>
-          <a class="header nav-link text-light" href="#contact">Contact</a>
+        <div class="col-12 col-sm-6 mt-sm-2 d-sm-flex vertical-align-sm-center mb-3 mb-sm-0">
+          <a class="header nav-link text-light ms-sm-4 text-center" href="#features">Features</a>
+          <a class="header nav-link text-light ms-sm-4 text-center" href="#pricing">Pricing</a>
+          <a class="header nav-link text-light ms-sm-4 text-center" href="#contact">Contact</a>
+        </div>
+        <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center mb-2 mt-2">
+          <a class="iconoA nav-link" href="#"></a>
+          <a class="iconoB nav-link ms-3" href="#"></a>
         </div>
     </div>
 </body>
