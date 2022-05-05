@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./sass/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </head>
 <body>
   <div class="conteiner-fluid">
@@ -214,24 +215,24 @@
             <button type="button" class="btn btn-primary">More info</button>
           </div>
     </div>
-    <div class="row bg-primary">
+    <div class="row bg-primary pb-5">
       <div class="col-10 offset-1 mt-5" id="contact">
         <p class="separacion text-center text-white mt-3">35.000+ ALREADY JOINED</p>
         <h2 class="text-center fw-bold text-white col-12 col-sm-4 mx-auto" id="pricing">Stay up-to-date with what we're doing</h2>
       </div>
-      <div class="col-12 mt-4 mb-4 mx-auto d-flex justify-content-center">
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltipUsername" class="form-label">Username</label>
+      <div class="col-12 mt-4 mb-3 mx-auto">
+        <form class="row g-3 col-12 mx-auto needs-validation d-sm-flex justify-content-sm-center" novalidate>
+          <div class="col-10 col-sm-3 offset-1 offset-sm-3">
+            <label for="validationTooltipUsername" class="visually-hidden"></label>
             <div class="input-group has-validation">
-              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+              <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" title="Whoops, make sure it's an email." placeholder="Enter your email adress" required>
               <div class="invalid-tooltip">
-                Please choose a unique and valid username.
+                Whoops, make sure it's an email.
               </div>
             </div>
           </div>
-          <div class="col-12">
-            <button class="btn btn-secondary" type="submit">Contact us</button>
+          <div class="col-10 col-sm-4 offset-1 offset-sm-0">
+            <button class="btn btn-secondary col-12 col-sm-3" type="submit">Contact us</button>
           </div>
         </form>
       </div>
@@ -241,13 +242,35 @@
           <div><img src="./Recursos projecte sprint 2-20220422/Imagenes/bookmark.svg" alt="" width="150" height="24" class="d-inline-block align-text-top img-fluid"></div>
         </div>
         <div class="col-12 col-sm-6 mt-sm-2 d-sm-flex vertical-align-sm-center mb-3 mb-sm-0">
-          <a class="header nav-link text-light ms-sm-4 text-center" href="#features">Features</a>
-          <a class="header nav-link text-light ms-sm-4 text-center" href="#pricing">Pricing</a>
-          <a class="header nav-link text-light ms-sm-4 text-center" href="#contact">Contact</a>
+          <a class="header col-2 mx-auto mx-sm-0 nav-link text-light ms-sm-4 " href="#features">Features</a>
+          <a class="header col-2 mx-auto mx-sm-0 nav-link text-light ms-sm-4 " href="#pricing">Pricing</a>
+          <a class="header col-2 mx-auto mx-sm-0 nav-link text-light ms-sm-4 " href="#contact">Contact</a>
         </div>
         <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center mb-2 mt-2">
           <a class="iconoA nav-link" href="#"></a>
           <a class="iconoB nav-link ms-3" href="#"></a>
         </div>
     </div>
+
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+      </script>
 </body>

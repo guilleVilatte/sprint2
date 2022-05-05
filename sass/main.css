@@ -3068,7 +3068,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #dc3545;
+  color: #FA5959;
 }
 
 .invalid-tooltip {
@@ -3080,8 +3080,8 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
   font-size: 0.875rem;
-  color: #fff;
-  background-color: rgba(220, 53, 69, 0.9);
+  color: #000;
+  background-color: rgba(250, 89, 89, 0.9);
   border-radius: 0.25rem;
 }
 
@@ -3093,7 +3093,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #dc3545;
+  border-color: #FA5959;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("../Recursos projecte sprint 2-20220422/Imagenes/icon-error.svg");
   background-repeat: no-repeat;
@@ -3102,9 +3102,9 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
-  border-color: #dc3545;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  border-color: #FA5959;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
@@ -3113,7 +3113,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
-  border-color: #dc3545;
+  border-color: #FA5959;
 }
 
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
@@ -3124,26 +3124,26 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
-  border-color: #dc3545;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  border-color: #FA5959;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 
 .was-validated .form-check-input:invalid, .form-check-input.is-invalid {
-  border-color: #dc3545;
+  border-color: #FA5959;
 }
 
 .was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
-  background-color: #dc3545;
+  background-color: #FA5959;
 }
 
 .was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
-  color: #dc3545;
+  color: #FA5959;
 }
 
 .form-check-inline .form-check-input ~ .invalid-feedback {
@@ -12014,6 +12014,7 @@ fieldset:disabled .btn {
 .card {
   border: none;
   margin-top: 70px;
+  border-radius: 10px;
 }
 
 .accordion-button:focus {

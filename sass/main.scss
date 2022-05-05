@@ -3,8 +3,10 @@ $primary:       #5265E1;
 $secondary:     #FA5959;
 $success:       #000a4e;
 
-$accordion-icon-color:          #5265E1;
-$accordion-icon-active-color:   #FA5959;  
+$accordion-icon-color:          $primary;
+$accordion-icon-active-color:   $secondary;  
+
+$form-feedback-invalid-color:       $secondary;
 
 $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagenes/icon-error.svg");
 
@@ -14,7 +16,7 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
     overflow: hidden;
 }
 .header:hover{
-    color: $secondary !important
+    color: $secondary !important;
 }
 .mancha{
     height:33vh;
@@ -26,14 +28,14 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
     margin: auto;
 }
 .tab:hover{
-    color:#FA5959 !important
+    color:$secondary!important;
 }
 #myTab li{
     border-bottom:1px solid rgb(216, 214, 214) !important;
     border-top:1px solid rgb(216, 214, 214) !important;
 }
 #myTab li button.active{
-    border-bottom: 5px inset #FA5959 !important;
+    border-bottom: 5px inset $secondary !important;
 }
 #myTab{
     border:none;
@@ -49,12 +51,13 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
     color: white;
 }
 .btn-secondary:hover{
-    color: #FA5959;
+    color: $secondary;
     background-color: white;  
 }
 .card{
     border: none;
     margin-top: 70px;
+    border-radius: 10px;
 }
 .accordion-button:focus{
     color: black;
