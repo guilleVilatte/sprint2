@@ -8,9 +8,14 @@ $accordion-icon-active-color:   $secondary;
 
 $form-feedback-invalid-color:       $secondary;
 
+$modal-backdrop-opacity:            .8;
+$modal-content-border-color:        none;
+$modal-content-border-width:        none;
+
 $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagenes/icon-error.svg");
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./modal";
 
 .conteiner-fluid{
     overflow: hidden;
@@ -19,6 +24,21 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
 h1,h2,h3{
     font-family: títulos;
 }
+.modal-content{
+    background-color: transparent;
+}
+.close{
+    background:transparent;
+    border: none;
+}
+.enlaces{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bt{
+    font-size: 1em !important;
+    letter-spacing: 0.2em;
+} 
 .navbar-toggler{
     border: none;
 }
@@ -139,6 +159,8 @@ h1,h2,h3{
         height: 60px;
     }
  }
+
+ 
 
  @font-face {
     font-family: títulos;

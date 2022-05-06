@@ -10,12 +10,43 @@
 </head>
 <body>
   <div class="conteiner-fluid">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
+          <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true" aria-labelledby="myModal" role="dialog">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content contenido">
+              <div class="row modal-header">
+                <div class="col">
+                  <img class="img-fluid" src="./Recursos projecte sprint 2-20220422/Imagenes/bookmark - 2.svg" alt="">
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <button type="button close" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img class="img-fluid" src="./Recursos projecte sprint 2-20220422/Imagenes/icon-close.svg" alt="">
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="row modal-body d-flex justify-content-center mt-5">
+                <div class=" col-11 border-top border-1"><a class="enlaces nav-link text-white text-center" href="#features">FEATURES</a></div>
+                <div class=" col-11 border-top border-1"><a class="enlaces nav-link text-white text-center" href="#pricing">PRICING</a></div>
+                <div class=" col-11 border-top border-1"><a class="enlaces nav-link text-white text-center" href="#contact">CONTACT</a></div>
+                <div class=" col-11 d-flex justify-content-center border-top border-1"><button type="button" class="bt btn col-12 text-white border border-2 mt-2">LOGIN</button></div>
+              </div>
+              <div class="row modal-footer d-flex align-items-end" style="height:35vh;">
+                <div class="col d-flex justify-content-end">
+                  <img src="./Recursos projecte sprint 2-20220422/Imagenes/facebook.svg" alt="">
+                </div>
+                <div class="col">
+                  <img src="./Recursos projecte sprint 2-20220422/Imagenes/twitter.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           <a class="navbar-brand offset-sm-1" href="#">
             <img src="./Recursos projecte sprint 2-20220422/Imagenes/logo-bookmark.svg" alt="" width="150" height="24" class="d-inline-block align-text-top img-fluid ms-sm-5">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="navbar-toggler" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><img class="img.fluid" src="./Recursos projecte sprint 2-20220422/Imagenes/icon-hamburger.svg" alt=""></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
@@ -47,7 +78,7 @@
             </div>
             <div class="col-12 col-sm-6 order-first order-sm-last position-relative pe-0">
               <div class="mancha col-9 float-end bg-primary rounded-end rounded-pill mt-5"></div>
-              <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-hero.svg" class="img-fluid col-12 col-sm-9 position-absolute top-50 start-50 translate-middle" alt="">
+              <img src="./Recursos projecte sprint 2-20220422/Imagenes/illustration-hero.svg" class="img-fluid col-11 col-sm-9 position-absolute top-50 start-50 translate-middle" alt="">
             </div>
     </div>
     <div class="row mt-5 mb-5">
