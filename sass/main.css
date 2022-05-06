@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11959,6 +11960,21 @@ fieldset:disabled .btn {
 
 .conteiner-fluid {
   overflow: hidden;
+  font-family: general;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: títulos;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
 }
 
 .header:hover {
@@ -11993,6 +12009,18 @@ fieldset:disabled .btn {
   border: none;
 }
 
+.btn {
+  font-weight: bold;
+  font-size: 0.8em;
+  height: 100%;
+}
+
+.btn:focus {
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-primary:hover {
   background-color: white;
   color: #5265E1;
@@ -12000,6 +12028,10 @@ fieldset:disabled .btn {
 
 .btn-light:hover {
   border: 1px solid black;
+}
+
+.btn-light:focus {
+  color: black;
 }
 
 .btn-secondary {
@@ -12015,6 +12047,10 @@ fieldset:disabled .btn {
   border: none;
   margin-top: 70px;
   border-radius: 10px;
+}
+
+.card-tittle {
+  font-family: títulos;
 }
 
 .accordion-button:focus {
@@ -12077,5 +12113,15 @@ fieldset:disabled .btn {
   .footer {
     height: 60px;
   }
+}
+
+@font-face {
+  font-family: títulos;
+  src: url("../Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: general;
+  src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
 }
 /*# sourceMappingURL=main.css.map */

@@ -14,6 +14,17 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
 
 .conteiner-fluid{
     overflow: hidden;
+    font-family: general;
+}
+h1,h2,h3{
+    font-family: títulos;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
 }
 .header:hover{
     color: $secondary !important;
@@ -40,12 +51,24 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
 #myTab{
     border:none;
 }
+.btn{
+    font-weight: bold;
+    font-size: 0.8em;
+    height: 100%;
+}
+.btn:focus{
+    color:white;
+    box-shadow: none;
+}
 .btn-primary:hover{
     background-color: white;
     color: $primary;
 }
 .btn-light:hover{
     border: 1px solid black;
+}
+.btn-light:focus{
+    color: black;
 }
 .btn-secondary{
     color: white;
@@ -58,6 +81,9 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
     border: none;
     margin-top: 70px;
     border-radius: 10px;
+}
+.card-tittle{
+    font-family: títulos;
 }
 .accordion-button:focus{
     color: black;
@@ -113,3 +139,12 @@ $form-feedback-icon-invalid: url("../Recursos projecte sprint 2-20220422/Imagene
         height: 60px;
     }
  }
+
+ @font-face {
+    font-family: títulos;
+    src: url("../Poppins/Poppins-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: general;
+    src: url("../Poppins/Poppins-Regular.ttf") format('truetype');
+}
