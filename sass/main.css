@@ -12127,7 +12127,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .enlaces {
-  margin-top: 10px;
+  border-top: 1px solid gray;
+  padding-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -12273,10 +12274,17 @@ h1, .h1, h2, .h2, h3, .h3 {
   .mancha {
     height: 40vh;
   }
-  .dos {
+  .card:nth-child(1), .card:nth-child(2), .card:nth-child(3) {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .card:nth-child(1) {
+    margin-top: 70px;
+  }
+  .card:nth-child(2) {
     margin-top: 120px;
   }
-  .tres {
+  .card:nth-child(3) {
     margin-top: 170px;
   }
   .footer {

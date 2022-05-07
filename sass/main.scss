@@ -32,7 +32,8 @@ h1,h2,h3{
     border: none;
 }
 .enlaces{
-    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
     margin-bottom: 10px;
 }
 .bt{
@@ -149,10 +150,20 @@ h1,h2,h3{
     .mancha{
         height:40vh;
     }
-    .dos{
+    %tarjetas{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .card:nth-child(1){
+        @extend %tarjetas;
+        margin-top: 70px;
+    }
+    .card:nth-child(2){
+        @extend %tarjetas;
         margin-top: 120px;
     }
-    .tres{
+    .card:nth-child(3){
+        @extend %tarjetas;
         margin-top: 170px;
     }
     .footer{
