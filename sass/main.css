@@ -12262,18 +12262,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-image: url("../Recursos projecte sprint 2-20220422/Imagenes/icon-twitter.svg");
 }
 
-@media (min-width: 576px) {
-  #myTab li {
-    border-bottom: 1px solid #d8d6d6 !important;
-    border-top: none !important;
-  }
-  .tab {
-    color: gray;
-    width: 15vw;
-  }
-  .mancha {
-    height: 40vh;
-  }
+@media (min-width: 992px) {
   .card:nth-child(1), .card:nth-child(2), .card:nth-child(3) {
     margin-left: 20px !important;
     margin-right: 20px !important;
@@ -12287,8 +12276,25 @@ h1, .h1, h2, .h2, h3, .h3 {
   .card:nth-child(3) {
     margin-top: 170px;
   }
+}
+
+@media (min-width: 768px) {
   .footer {
     height: 60px;
+  }
+  .tab {
+    color: gray;
+    width: 15vw;
+  }
+}
+
+@media (min-width: 576px) {
+  #myTab li {
+    border-bottom: 1px solid #d8d6d6 !important;
+    border-top: none !important;
+  }
+  .mancha {
+    height: 40vh;
   }
 }
 

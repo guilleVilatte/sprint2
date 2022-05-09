@@ -137,19 +137,7 @@ h1,h2,h3{
 .iconoB:hover{
     background-image: url("../Recursos projecte sprint 2-20220422/Imagenes/icon-twitter.svg");
 }
-
-@include media-breakpoint-up(sm) {
-    #myTab li{
-        border-bottom:1px solid rgb(216, 214, 214) !important;
-        border-top:none !important;
-    }
-    .tab{
-        color: gray;  
-        width: 15vw ;
-    }
-    .mancha{
-        height:40vh;
-    }
+@include media-breakpoint-up(lg) {
     %tarjetas{
         margin-left: 20px !important;
         margin-right: 20px !important;
@@ -166,8 +154,23 @@ h1,h2,h3{
         @extend %tarjetas;
         margin-top: 170px;
     }
+}
+@include media-breakpoint-up(md) {
     .footer{
         height: 60px;
+    }
+    .tab{
+        color: gray;  
+        width: 15vw ;
+    }
+}
+@include media-breakpoint-up(sm) {
+    #myTab li{
+        border-bottom:1px solid rgb(216, 214, 214) !important;
+        border-top:none !important;
+    }
+    .mancha{
+        height:40vh;
     }
  }
 
